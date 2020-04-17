@@ -9,11 +9,9 @@ import android.os.Bundle;
 
 
 /**
- * IMPORTANT: Make sure you are using the correct package name.
+ *  Make sure you are using the correct package name.
  * This example uses the package name:
- * package com.example.android.justjava
- * If you get an error when copying this code into Android studio, update it to match teh package name found
- * in the project's AndroidManifest.xml file.
+
  **/
 
 import android.os.Bundle;
@@ -25,10 +23,7 @@ import android.widget.TextView;
 
 import java.text.NumberFormat;
 
-/**
- * This app displays an order form to order coffee.
- * TextView textVieww=new TextView(this) context is the same so this;
- */
+
 public class MainActivity extends AppCompatActivity {
     public int numberSatisfaction=0;
     @Override
@@ -86,10 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * This method displays the given quantity value on the screen.
-     *first find a etxt to be change by find by id, hthen set a text with a passed arguemnt in set text methid callde with the obect
-     */
+
     private void displayQuantity(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
